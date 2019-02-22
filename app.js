@@ -10,8 +10,8 @@ app.get('/', function(req,res){
 
 app.post('/processEmail', function(req, res){
     console.log("recieved post request: ", req)
-
-    webhook.postRequest(webhookUrl)
+    console.log("Was post request successful: ", webhook.postRequest(webhookUrl))
+    res.end()
 })
 
 const PORT = process.env.PORT || 3000
