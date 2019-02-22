@@ -1,0 +1,22 @@
+{
+  "name": "automated_email_notifier",
+  "version": "1.0.0",
+  "description": "Application that creates a calandar event after recieving an email notifying that a book has been checked out at a local library\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvwarrior/automated_email_notifier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvwarrior/automated_email_notifier/issues"
+  },
+  "homepage": "https://github.com/gvwarrior/automated_email_notifier#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
