@@ -1,15 +1,15 @@
 # automated_email_notifier
 
 ## Context
-This repository was created in store my solution to a problem outlined in a coding interview. The problem statement given is listed below and my problem solving processes is shown step-by-step below it.
+This repository was created tn store my solution to a problem outlined in a coding interview. The problem statement given is listed below and my problem solving process is shown step-by-step below it.
 
 ## Problem Statement 
 I get an email from my local library whenever I check out books. The email gives calendar date, if my account currently owes any fees, title of book, etc. I need to remind myself to take back the book. I personally use my calendar on my phone for everything. 
 
 ## Problem Solving Process
-### Step 1)
+### Step 1) Create Niave Solution
 
-* Given this problem, my first step is to think of a niave solution. Something that would be simple to implement and get me close to the required solution.
+* Given this problem, my first step is to think of a **niave solution**. Something that would be simple to implement and get me close to the required solution.
 
 * I am familiar with a online Tool called IFTTT which allows you to wait for a specific event to happen (Like recieving an email from the library) and trigger one of many responses (In this case, I can create an event on a calendar). 
 
@@ -17,7 +17,7 @@ I get an email from my local library whenever I check out books. The email gives
   
 While this solution was able to take the body of an email and create a calendar event, I wasn't able to parse the date the book was due so I had to arbitarily assign the event date which is not very useful.
 
-### Step 2) 
+### Step 2) Create an improved prototype
 
 * My naive solution took an email and created a calendar event but I need someway to process the text in the email to extract useful information before I create a calendar event. 
 
