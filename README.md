@@ -21,7 +21,7 @@ While this solution was able to take the body of an email and create a calendar 
 
 * My naive solution took an email and created a calendar event but I need someway to process the text in the email to extract useful information before I create a calendar event. 
 
-* Thankfully I found that using IFTTT I can trigger a webhook whenever an email from the library is recieved and make a POST request to send the body of the email. I know one solution to this problem I am familiar with, creating a webserver!
+* Thankfully I found that using IFTTT I can trigger a webhook whenever an email from the library is recieved and make a POST request to send the body of the email. One solution to this problem I am familiar with, use a webserver!
   
    **[Example using IFTTT]**  [Email recieved from library] --> [POST request sent to webserver] 
 
