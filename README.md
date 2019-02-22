@@ -1,7 +1,7 @@
 # automated_email_notifier
 
 ## Context
-This repository was created tn store my solution to a problem outlined in a coding interview. The problem statement given is listed below and my problem solving process is shown step-by-step below it.
+This repository was created to store my solution to a problem outlined in a coding interview. The problem statement given is listed below and my problem solving process is shown step-by-step below it.
 
 ## Problem Statement 
 I get an email from my local library whenever I check out books. The email gives calendar date, if my account currently owes any fees, title of book, etc. I need to remind myself to take back the book. I personally use my calendar on my phone for everything. 
