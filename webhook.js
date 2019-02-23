@@ -1,15 +1,15 @@
 const request = require('request')
 
 module.exports.postRequest = function(url, req){
-    request.post(
+    return request.post(
         url,
         { 
             json: 
-            { 
-                "timeDue": req.timeDue, 
-                "bookTitle": req.bookTitle,
-                "dateDue": req.dateDue
-            } 
+            {
+                "timeDue": "11:50",
+                "bookTitle": "Hello World!",
+                "dateDue": "10/25/2019"
+            }
         },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
