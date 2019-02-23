@@ -24,6 +24,7 @@ app.post('/processEmail', function(req, res){
     console.log("bookTitle: ", req.body.bookTitle)
     console.log("dateDue: ", req.body.dateDue)
     console.log("timeDue: ", req.body.timeDue)
+    console.log("timeDue: ", req.body.outstandingFine)
     webhook.postRequest(webhookUrl, req)
     res.end()
 })
