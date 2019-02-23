@@ -23,7 +23,7 @@ app.post('/processEmail', function(req, res){
     console.log("bookTitle: ", req.body.bookTitle)
     console.log("dateDue: ", req.body.dateDue)
     console.log("timeDue: ", req.body.timeDue)
-    console.log("Was post request successful: ", webhook.postRequest(webhookUrl, req))
+    webhook.postRequest(webhookUrl, req)
     res.end()
 })
 

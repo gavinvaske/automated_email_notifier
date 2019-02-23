@@ -6,9 +6,9 @@ module.exports.postRequest = function(url, req){
         { 
             json: 
             {
-                "timeDue": "11:50",
-                "bookTitle": "Hello World!",
-                "dateDue": "10/25/2019"
+                "timeDue": req.body.timeDue,
+                "bookTitle": req.body.bookTitle,
+                "dateDue": req.body.dateDue
             }
         },
         function (error, response, body) {
