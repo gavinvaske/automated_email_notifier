@@ -20,6 +20,7 @@ app.get('/', function(req,res){
 })
 
 app.post('/processEmail', function(req, res){
+    console.log('req.body:', req.body)
     console.log("bookTitle: ", req.body.bookTitle)
     console.log("dateDue: ", req.body.dateDue)
     console.log("timeDue: ", req.body.timeDue)
