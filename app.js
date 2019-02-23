@@ -13,15 +13,17 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
 // The url the processed email should be sent to 
-const webhookUrl = "https://maker.ifttt.com/trigger/email_processed_by_server/with/key/b9OelmXvPgNPq5yi71DRnA"
+const webhookUrl = "https://hooks.zapier.com/hooks/catch/4556328/pzhoz7/"
 
 app.get('/', function(req,res){
-    res.send("Hello Mars!")
+    res.send("Welcome! I am a webserver created using Node.js and Express.js!")
 })
 
 app.post('/processEmail', function(req, res){
-    console.log("recieved post request: ", req.body.data)
-    console.log("Was post request successful: ", webhook.postRequest(webhookUrl))
+    console.log("bookTitle: ", req.body.bookTitle)
+    console.log("dateDue: ", req.body.dateDue)
+    console.log("timeDue: ", req.body.timeDue)
+    console.log("Was post request successful: ", webhook.postRequest(webhookUrl, req))
     res.end()
 })
 

@@ -1,9 +1,16 @@
 const request = require('request')
 
-module.exports.postRequest = function(url){
+module.exports.postRequest = function(url, req){
     request.post(
         url,
-        { json: { "value1": 'hi' } },
+        { 
+            json: 
+            { 
+                "timeDue": req.timeDue, 
+                "bookTitle": req.bookTitle,
+                "dateDue": req.dateDue
+            } 
+        },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log(body)
